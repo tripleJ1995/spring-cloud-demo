@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-public class Application8201 {
+public class ConfigClient8201 {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application8201.class, args);
+		SpringApplication.run(ConfigClient8201.class, args);
 	}
 	@Value("${foo}")
 	String foo;
