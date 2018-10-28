@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApi {
 
-    @Autowired(required = false)
+    @Autowired
     private DemoService demoService;
 
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
