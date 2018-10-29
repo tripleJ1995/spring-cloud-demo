@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @description
  **/
 @RestController
-@RequestMapping(value = "/client1")
+@RequestMapping(value = "/client2")
 public class DemoApi {
 
     @Value("${server.port}")
@@ -18,6 +18,6 @@ public class DemoApi {
 
     @RequestMapping("/hi")
     public String home(String name) {
-        return "hi " + name + ",i am from port:" + port;
+        return "hi client - 2" + name + ",i am from port:" + port;
     }
 }
