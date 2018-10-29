@@ -2,7 +2,6 @@ package cn.j.service.impl;
 
 import cn.j.service.DemoService;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author J
@@ -11,8 +10,5 @@ import org.springframework.web.bind.annotation.RequestParam;
  **/
 @Component
 public class DemoServiceImpl implements DemoService {
-    @Override
-    public String sayHiFromClientOne(@RequestParam("name") String name) {
-        return "sorry " + name;
-    }
+
 }
