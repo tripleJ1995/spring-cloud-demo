@@ -11,7 +11,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableDiscoveryClient
 @EnableEurekaClient
 @EnableFeignClients
-@EnableHystrix //开启断路器
 public class Feign8100 {
 
     public static void main(String[] args) {

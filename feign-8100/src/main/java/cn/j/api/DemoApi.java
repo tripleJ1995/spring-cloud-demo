@@ -1,6 +1,6 @@
 package cn.j.api;
 
-import cn.j.dao.Client1Dao;
+import cn.j.service.Client1Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApi {
 
     @Autowired
-    private Client1Dao demoDao;
+    private Client1Service demoDao;
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     public String sayHi(String name) {

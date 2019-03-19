@@ -1,6 +1,6 @@
-package cn.j.dao.hystric;
+package cn.j.service.hystric;
 
-import cn.j.dao.Client1Dao;
+import cn.j.service.Client1Service;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * @description
  **/
 @Component
-public class Client1Hystric implements Client1Dao {
+public class Client1ServiceHystric implements Client1Service {
     @Override
     public String sayHiFromClientOne(String name) {
         return "sorry " + name + ", net error";

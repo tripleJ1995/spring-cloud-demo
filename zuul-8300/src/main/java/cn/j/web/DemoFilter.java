@@ -34,9 +34,13 @@ public class DemoFilter extends ZuulFilter {
         return 0;
     }
 
+    /**
+     * 是否执行过滤
+     * @return
+     */
     @Override
     public boolean shouldFilter() {
-        return false;
+        return true;
     }
 
     /**

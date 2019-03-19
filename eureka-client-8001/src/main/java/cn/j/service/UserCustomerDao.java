@@ -1,4 +1,4 @@
-package cn.j.dao;
+package cn.j.service;
 
 import cn.j.entity.UserCustomer;
 import tk.mybatis.mapper.common.BaseMapper;

@@ -9,9 +9,9 @@ spring:
     name: client-zuul
 zuul:
   routes:
-    client-1:
+    group1:
       path: /api-1/**
       serviceId: client-1
-    client-2:
+    group2:
       path: /api-2/**
       serviceId: client-2

@@ -18,6 +18,7 @@ public class DemoApi {
 
     @RequestMapping("/hi")
     public String home(String name) {
+        System.out.println(name);
         return "hi " + name + ",i am from port:" + port;
     }
 }
