@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
  * @description
  **/
 @Component
-public class Client1ServiceHystric implements Client1Service {
+public class Client1ServiceHystrix implements Client1Service {
     @Override
-    public String sayHiFromClientOne(String name) {
-        return "sorry " + name + ", net error";
+    public String testHystrix(String name) {
+        return "sorry " + name + ", in hystrix";
     }
 }

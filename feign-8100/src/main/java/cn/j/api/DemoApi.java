@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class DemoApi {
 
     @Autowired
-    private Client1Service demoDao;
+    private Client1Service client1Service;
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     public String sayHi(String name) {
-        return demoDao.sayHiFromClientOne(name);
+        return client1Service.testHystrix(name);
     }
 }

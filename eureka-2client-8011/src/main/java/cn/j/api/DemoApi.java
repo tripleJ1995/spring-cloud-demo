@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @description
  **/
 @RestController
-@RequestMapping(value = "/client2")
+@RequestMapping(value = "/demo")
 public class DemoApi {
 
     @Value("${server.port}")

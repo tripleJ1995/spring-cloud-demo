@@ -1,6 +1,6 @@
 package cn.j.service;
 
-import cn.j.service.hystric.Client1ServiceHystric;
+import cn.j.service.hystric.Client1ServiceHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @description
  **/
 // fallback  指定断路器
-@FeignClient(value = "client-1", fallback = Client1ServiceHystric.class)
+@FeignClient(value = "client-1", fallback = Client1ServiceHystrix.class)
 public interface Client1Service {
 
-    @RequestMapping(value = "/client1/hi", method = RequestMethod.GET)
-    String sayHiFromClientOne(@RequestParam("name") String name);
+    @RequestMapping(value = "/demo/hystrix", method = RequestMethod.GET)
+    String testHystrix(@RequestParam("name") String name);
 }
